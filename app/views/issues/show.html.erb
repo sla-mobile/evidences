@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @issue.title %>
+</p>
+
+<p>
+  <b>Details:</b>
+  <%= @issue.details %>
+</p>
+
+<p>
+  <b>Risk:</b>
+  <%= @issue.risk %>
+</p>
+
+<p>
+  <b>Recommendation:</b>
+  <%= @issue.recommendation %>
+</p>
+
+<p>
+  <b>Attachment:</b>
+  <ul>
+  <% @issue.attachments.each do |a| %>
+    <li><a href="/download/?filename=<%= a.filename %>"><%= a.filename %></a></li>
+  <% end %>
+  </ul>
+</p>
+
+<%= link_to 'Edit', edit_issue_path(@issue) %> |
+<%= link_to 'Back', issues_path %>

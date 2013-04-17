@@ -1,0 +1,17 @@
+  <div class="row">
+  <h1>Your account</h1>
+    <div class="span12">
+
+
+<h3> My projects</h3>
+<ul>
+<% @user.projects.each do |project| %>
+    <li><%= link_to project.name , project %></li>
+  
+<% end %>
+</ul>
+
+<br />
+</div>
+</div>
+  

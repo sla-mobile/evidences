@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Evidences</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "bootstrap", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "bootstrap" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="row">
+
+<div class="hero-unit">
+  <h1>Login to Evidences</h1>
+  <p>An easy and simple way to manage security issues</p>
+</div>
+</div>
+
+<section id="login">
+<div class="row">
+  <div class="span4"><br/> </div>
+  <div class="span4">
+  <form class="well" action="/login" method="POST">
+  <div class="clearfix"> 
+   <label>Username:</label>
+
+  <input type="text" class="span3" name="login" placeholder="Your username..." />
+  </div>
+  <div class="clearfix"> 
+    <label>Password:</label> 
+  <input type="password" class="span3" name="password" placeholder="Your password..."/>
+  </div>
+  <button type="submit" class="btn">Login</button>
+</form>
+</div>
+  <div class="span4"/>
+</div>
+</section>
+</body>
+</html>

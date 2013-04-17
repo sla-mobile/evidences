@@ -1,0 +1,12 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  login: user1 
+  password: 5f4dcc3b5aa765d61d8327deb882cf99
+
+two:
+  id: 2
+  login: user2
+  password: 5f4dcc3b5aa765d61d8327deb882cf99
+

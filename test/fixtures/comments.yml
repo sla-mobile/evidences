@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: FP
+  details: This issue seems to be a false positive
+  parent_type: Issue
+  parent_id: 1
+
+two:
+  title: Delayed
+  details: This project has been delayed
+  parent_type: Project
+  parent_id: 2

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  name: PHP website  
+  details: Internet Facing Website
+  
+two:
+  id: 2
+  name: Java website 
+  details: Internet Facing Payment management

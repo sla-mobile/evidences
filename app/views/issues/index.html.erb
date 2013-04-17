@@ -1,0 +1,33 @@
+
+<div class="row">
+<h1>Open Issues</h1>
+<div class=<span12">
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Title</th>
+    <th>Details</th>
+    <th>Risk</th>
+    <th>Recommendation</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @issues.each do |issue| %>
+  <tr>
+    <td><%= issue.title %></td>
+    <td><%= issue.details %></td>
+    <td><%= issue.risk %></td>
+    <td><%= issue.recommendation %></td>
+    <td><%= link_to 'Show', issue %></td>
+    <td><%= link_to 'Edit', edit_issue_path(issue) %></td>
+    <td><%= link_to 'Destroy', issue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+
+</div>
+</div>

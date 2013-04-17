@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  title: Cross Site Scriting 
+  details: XSS vulnerability in error.php
+  risk: high
+  recommendation: Output escaping
+  status: retesting
+  project_id: 1
+
+two:
+  id: 2
+  title: SQL injection
+  details: SQL injection in test.php
+  risk: high
+  status: open
+  recommendation: Input filtering
+  project_id: 1
+
+three:
+  id: 3
+  title: SQL injection
+  details: SQL injection in safe.jsp
+  risk: high
+  status: open
+  recommendation: Input filtering
+  project_id: 2
+
+
+
+
+
